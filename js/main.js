@@ -23,10 +23,10 @@ window.addEventListener("DOMContentLoaded", event => {
 
     pin.addEventListener("click", () => {
         if (!visible) {
-            tl.play();
+            tl.timeScale(1).play();
             visible = true;
         } else {
-            tl.reverse();
+            tl.timeScale(3).reverse();
             visible = false;
         }
     });
